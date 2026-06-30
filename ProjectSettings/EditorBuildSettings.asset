@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_DDES9903_Yunxuan Wang_A1/Scene/scene5.unity
     guid: 6423264ee223f8f4e89eecacd46bb3ce
+  - enabled: 1
+    path: Assets/_DDES9903_Yunxuan Wang_A1/Scene/scene6.unity
+    guid: a3fe05d163b9e154fb55e382e3920b89
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 3c28928f4ba463b408fa3dad31f078ec, type: 2}
