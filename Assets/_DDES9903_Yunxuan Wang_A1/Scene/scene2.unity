@@ -3255,7 +3255,6 @@ Transform:
   - {fileID: 1792404707}
   - {fileID: 1713492871}
   - {fileID: 35512792}
-  - {fileID: 1928407056}
   - {fileID: 988206038}
   - {fileID: 948673154}
   - {fileID: 1578077651}
@@ -3641,7 +3640,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1234350816}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2416127938742061714, guid: e0c516ef3663a92438460febaa302dae, type: 3}
       propertyPath: m_Name
@@ -3661,15 +3660,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3083874083149860904, guid: e0c516ef3663a92438460febaa302dae, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.16827011
+      value: -19.267
       objectReference: {fileID: 0}
     - target: {fileID: 3083874083149860904, guid: e0c516ef3663a92438460febaa302dae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.12
       objectReference: {fileID: 0}
     - target: {fileID: 3083874083149860904, guid: e0c516ef3663a92438460febaa302dae, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -11.023769
+      value: 3.5200005
       objectReference: {fileID: 0}
     - target: {fileID: 3083874083149860904, guid: e0c516ef3663a92438460febaa302dae, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3702,8 +3701,16 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2416127938742061714, guid: e0c516ef3663a92438460febaa302dae, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1928407057}
   m_SourcePrefab: {fileID: 100100000, guid: e0c516ef3663a92438460febaa302dae, type: 3}
+--- !u!1 &1431647491 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2416127938742061714, guid: e0c516ef3663a92438460febaa302dae, type: 3}
+  m_PrefabInstance: {fileID: 1431647490}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1477714446
 GameObject:
   m_ObjectHideFlags: 0
@@ -5101,11 +5108,72 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1234350816}
   m_LocalEulerAnglesHint: {x: 0, y: -89.83, z: 0}
---- !u!4 &1928407056 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3083874083149860904, guid: e0c516ef3663a92438460febaa302dae, type: 3}
-  m_PrefabInstance: {fileID: 1431647490}
+--- !u!114 &1928407057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431647491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 021a70606049ebd4f90ad8b6735c07b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractableGeneral
+  onPrimaryInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1431647491}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onPrimaryInteractLift:
+    m_PersistentCalls:
+      m_Calls: []
+  onSecondaryInteract:
+    m_PersistentCalls:
+      m_Calls: []
+  onSecondaryInteractLift:
+    m_PersistentCalls:
+      m_Calls: []
+  onHoverEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onHoverExit:
+    m_PersistentCalls:
+      m_Calls: []
+  hoverText: 
+  customTouchDistance: -1
+  heldText: 
+  restrictSecondaryToHeldOnly: 0
+  customHoldDistance: -1
+  eventRelay: {fileID: 0}
+  onPrimaryInteractBackground:
+    m_PersistentCalls:
+      m_Calls: []
+  onPrimaryInteractLiftBackground:
+    m_PersistentCalls:
+      m_Calls: []
+  onSecondaryInteractBackground:
+    m_PersistentCalls:
+      m_Calls: []
+  onSecondaryInteractLiftBackground:
+    m_PersistentCalls:
+      m_Calls: []
+  onHoverEnterBackground:
+    m_PersistentCalls:
+      m_Calls: []
+  onHoverExitBackground:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2005701425 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8157043946459995008, guid: 89f7238d42a1e4944903f82e2200a073, type: 3}
@@ -5305,6 +5373,7 @@ SceneRoots:
   - {fileID: 254912336}
   - {fileID: 1234350816}
   - {fileID: 1696009310}
+  - {fileID: 1431647490}
   - {fileID: 1604746818}
   - {fileID: 803350612}
   - {fileID: 1751048563}
